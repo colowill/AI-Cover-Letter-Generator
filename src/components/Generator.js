@@ -6,6 +6,7 @@ function Generator() {
     /** div info
      *  1. alligning child componenets in a vertical column
      *  2. creating header
+     *  3. 
      */
     <div className="flex flex-col">
         <div className="flex flex-row justify-between mx-5 my-4 items-center">
@@ -18,6 +19,7 @@ function Generator() {
             </h2>
             <button className="border-2 px- mr-[3px] border-solid border-black rounded-full hover:bg-gray-200 
              w-12 h-12 items-center justify-center text-3xl">
+                i
             </button>
         </div>
         <div className="flex mx-5">
