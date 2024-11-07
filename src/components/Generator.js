@@ -17,7 +17,7 @@ function Generator() {
                 LinkedIn Cover Letter Generator
             </h2>
             <button className="border-2 px- mr-[3px] border-solid border-black rounded-full hover:bg-gray-200 
-             w-12 h-12 items-center justify-center text-3xl hover:font-bold">
+             w-12 h-12 items-center justify-center text-3xl">
             </button>
         </div>
         <div className="flex mx-5">
