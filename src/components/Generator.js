@@ -1,12 +1,13 @@
 // Command 'rfce'
 import React from 'react'
+import { IoInformationOutline } from "react-icons/io5";
 
 function Generator() {
   return (
-    /** div info
-     *  1. alligning child componenets in a vertical column
-     *  2. creating header
-     *  3. 
+    /** 
+     * Main container for application
+     * Includes text-box where generated resume will apear
+     * Includes buttons for profile section (profile.js) and generate
      */
     <div className="flex flex-col">
         <div className="flex flex-row justify-between mx-5 my-4 items-center">
@@ -17,16 +18,16 @@ function Generator() {
             <h2 className="text-2xl font-bold justify-between mx-1 my-1" style={{marginRight: '60px' }}>
                 LinkedIn Cover Letter Generator
             </h2>
-            <button className="border-2 px- mr-[3px] border-solid border-black rounded-full hover:bg-gray-200 
-             w-12 h-12 items-center justify-center text-3xl">
-                i
+            <button className="border-2 border-solid border-black rounded-full hover:bg-gray-100 
+             w-12 h-12 justify-center text-3xl flex items-center">
+                <IoInformationOutline />
             </button>
         </div>
         <div className="flex mx-5">
             <textarea
                 rows={12}
                 className="w-full"
-                placeholder="Cover Letter"
+                placeholder=". . . "
             />
         </div>
     </div>
