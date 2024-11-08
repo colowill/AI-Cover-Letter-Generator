@@ -17,17 +17,21 @@ function profile() {
         </div>
 
         <form className="flex column">
-            <label 
-            htmlFor="openAIKey"
-            className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-            >
+            <div className="mb-6">
+                <label 
+                htmlFor="openAIKey"
+                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                 Open AI Key
-            </label>
-            <textarea
-            rows={1}
-            className="w-full"
-            placeHolder="..."
-            ></textarea>
+                </label>
+                <input
+                id="openAIKey"
+                name="openAIKey"
+                type="text"
+                className="//TODO"
+                placeholder="//TODO"
+                >
+                </input>
+            </div>
 
         </form>
     </div>
