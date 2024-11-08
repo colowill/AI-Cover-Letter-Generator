@@ -17,6 +17,11 @@ function profile() {
         </div>
 
         <form className="flex column">
+            <label 
+            htmlFor="openAIKey"
+            >
+
+            </label>
             <textarea
             rows={1}
             className="w-full"
