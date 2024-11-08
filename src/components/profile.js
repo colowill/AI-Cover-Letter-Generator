@@ -19,8 +19,9 @@ function profile() {
         <form className="flex column">
             <label 
             htmlFor="openAIKey"
+            className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
             >
-
+                Open AI Key
             </label>
             <textarea
             rows={1}
