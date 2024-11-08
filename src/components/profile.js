@@ -18,7 +18,7 @@ function profile() {
 
         <form className="flex column">
             <textarea
-            rows={12}
+            rows={1}
             className="w-full"
             placeHolder="..."
             ></textarea>
