@@ -29,6 +29,7 @@ function profile() {
                 type="text"
                 className="//TODO"
                 placeholder="//TODO"
+                required
                 >
                 </input>
             </div>
