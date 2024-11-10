@@ -26,7 +26,7 @@ function profile() {
                 <input
                 id="openAIKey"
                 name="openAIKey"
-                type="text"
+                type="//"
                 className="//TODO"
                 placeholder="//TODO"
                 required
