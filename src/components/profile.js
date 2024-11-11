@@ -23,6 +23,7 @@ function profile() {
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                 Open AI Key
                 </label>
+
                 <input
                 id="openAIKey"
                 name="openAIKey"
@@ -30,8 +31,15 @@ function profile() {
                 className="//TODO"
                 placeholder="//TODO"
                 required
-                >
-                </input>
+                />
+            </div>
+            <div className="mb-6">
+                <label
+                htmlFor="resume"
+                className="block mb-2 text-sm">
+
+
+                </label>
             </div>
 
         </form>
