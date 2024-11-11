@@ -1,7 +1,7 @@
 import React from 'react'
 import { IoArrowBackOutline } from "react-icons/io5";
 
-// Profile section for user API keys
+// Profile section for user API keys and for entering their resume information
 function profile() {
   return (
     <div className="flex flex-col mx-5">
@@ -15,7 +15,6 @@ function profile() {
                 <IoArrowBackOutline />
             </button>
         </div>
-
         <form className="flex column">
             <div className="mb-6">
                 <label 
@@ -36,10 +35,16 @@ function profile() {
             <div className="mb-6">
                 <label
                 htmlFor="resume"
-                className="block mb-2 text-sm">
-
-
+                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                    Your Resume
                 </label>
+                <textarea
+                rows={8}
+                name="resume"
+                id="resume"
+                className="//TODO"
+                placeHolder="Fill in your resume here..."
+                ></textarea>
             </div>
 
         </form>
