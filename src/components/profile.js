@@ -1,5 +1,6 @@
 import React from 'react'
 import { IoArrowBackOutline } from "react-icons/io5";
+import { VscQuestion } from "react-icons/vsc";
 
 
 // Profile section for user API keys and for entering their resume information
@@ -25,7 +26,6 @@ function profile() {
                 className="block mb-2 text-sm font-medium text-gray-900 w-50">
                 OpenAI API Key
                 </label>
-
                 <input // Input for AI Key
                 id="AIKey"
                 name="AIKey"
