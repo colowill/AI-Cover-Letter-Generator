@@ -29,7 +29,7 @@ function profile() {
                 name="AIKey"
                 type="text"
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg 
-                focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                focus:ring-green-400 focus:border-green-400 block w-full p-2.5"
                 placeholder="sk-BdY..."
                 required
                 />
@@ -44,10 +44,20 @@ function profile() {
                 rows={8}
                 name="resume"
                 id="resume"
-                className="block "
+                className="border-2 border-solid border-gray-300 block w-full text-sm text-gray-900 p-2.5
+                focus:ring-green-400 focus:border-green-400 rounded-lg"
                 placeHolder="Paste here..."
                 // defaultValue={AIKey}
-                ></textarea>
+                >
+                </textarea>
+            </div>
+            <div className="mb-6"
+            >
+                <button
+                    type="submit"
+                    className=""
+                >
+                </button>
             </div>
 
         </form>
