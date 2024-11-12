@@ -16,11 +16,11 @@ function profile() {
                 <IoArrowBackOutline />
             </button>
         </div>
-        <form className="flex column">
-            <div className="mb-6">
+        <form className="flex-col">
+            <div className="mb-6 w-1/3">
                 <label // Label for OpenAI API Key
                 htmlFor="AIKey"
-                className="block mb-2 text-sm font-medium text-gray-900">
+                className="block mb-2 text-sm font-medium text-gray-900 w-50">
                 OpenAI API Key
                 </label>
 
