@@ -9,27 +9,32 @@ function Profile( {setPage} ) {
   return (
     <div className="flex flex-col mx-5">
         <div className="flex flex-row justify-between mx-5 my-4 items-center" 
-        style={{marginLeft: '0px' }}>
-            <h2 // Header for info 
+        style={{marginLeft: '-5px' }}>
+
+            <h2 // Header titled 'Your Info'
             className="text-2xl font-bold justify-between mx-1 my-1">
                 Your Info
             </h2>
+
             <button // Backarrow Button
             onClick={() => { setPage(ROUTES.GENERATOR) }}
-            className="flex border-2 border-solid border-black rounded-full hover:bg-green-300
+            className="flex border-2 border-solid border-black rounded-full hover:bg-gray-50
              w-12 h-12 justify-center text-3xl items-center"
              style={{marginRight: '-20px' }}>
                 <IoArrowBackOutline />
             </button>
+
         </div>
         <form className="flex-col">
             <div className="mb-6 w-1/3">
+
                 <label // Label for OpenAI API Key
                 htmlFor="AIKey"
                 className="block mb-2 text-sm font-medium text-gray-900 w-50">
                 OpenAI API Key
                 </label>
-                <input // Input for AI Key
+                
+                <input // Input box for AI Key
                 id="AIKey"
                 name="AIKey"
                 type="text"
@@ -38,13 +43,16 @@ function Profile( {setPage} ) {
                 placeholder="sk-BdY..."
                 required
                 />
+
             </div>
             <div className="mb-6">
-                <label // Label for Resume
+                
+                <label // Label for 'Your Resume'
                 htmlFor="resume"
                 className="block mb-2 text-sm font-medium text-gray-900">
                     Your Resume
                 </label>
+
                 <textarea // Text box for user's resume
                 rows={8}
                 name="resume"
@@ -55,6 +63,7 @@ function Profile( {setPage} ) {
                 // defaultValue={AIKey}
                 >
                 </textarea>
+
             </div>
             <div className="mb-6"
             >
@@ -65,6 +74,7 @@ function Profile( {setPage} ) {
                 >
                     Save
                 </button>
+                
             </div>
 
         </form>
