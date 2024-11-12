@@ -7,7 +7,7 @@ function Generator() {
     /** 
      * Main container for application
      * Includes text-box where generated resume will apear
-     * Includes buttons for profile section (profile.js) and generate
+     * Includes buttons for profile section (profile.js) and cv creation
      */
     <div className="flex flex-col">
         <div className="flex flex-row justify-between mx-5 my-4 items-center">
@@ -26,7 +26,7 @@ function Generator() {
         <div className="flex mx-5">
             <textarea
                 rows={12}
-                className="w-full"
+                className="w-full rounded-md focus:bg-gray-50 focus:ring-transparent"
                 placeholder=". . . "
             />
         </div>
