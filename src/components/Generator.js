@@ -1,8 +1,10 @@
 // Command 'rfce'
 import React from 'react'
+import {ROUTES} from "../utils/pages";
 import { IoInformationOutline } from "react-icons/io5";
 
-function Generator() {
+
+function Generator( {setPage} ) {
   return (
     /** 
      * Main container for application
@@ -18,7 +20,9 @@ function Generator() {
             <h2 className="text-2xl font-bold justify-between mx-1 my-1" style={{marginRight: '60px' }}>
                 LinkedIn Cover Letter Generator
             </h2>
-            <button className="border-2 border-solid border-black rounded-full hover:bg-gray-100 
+            <button // Profile button
+            onClick={() => { setPage(ROUTES.PROFILE) }}
+            className="border-2 border-solid border-black rounded-full hover:bg-gray-100 
              w-12 h-12 justify-center text-3xl flex items-center">
                 <IoInformationOutline />
             </button>

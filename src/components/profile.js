@@ -1,21 +1,24 @@
 import React from 'react'
+import {ROUTES} from "../utils/pages";
 import { IoArrowBackOutline } from "react-icons/io5";
-import { VscQuestion } from "react-icons/vsc";
+//import { VscQuestion } from "react-icons/vsc";
 
 
 // Profile section for user API keys and for entering their resume information
-function profile() {
+function Profile( {setPage} ) {
   return (
     <div className="flex flex-col mx-5">
-        <div className="flex flex-row justify-between mx-5 my-4 items-center">
-            <h1></h1>
+        <div className="flex flex-row justify-between mx-5 my-4 items-center" 
+        style={{marginLeft: '0px' }}>
             <h2 // Header for info 
             className="text-2xl font-bold justify-between mx-1 my-1">
                 Your Info
             </h2>
             <button // Backarrow Button
+            onClick={() => { setPage(ROUTES.GENERATOR) }}
             className="flex border-2 border-solid border-black rounded-full hover:bg-green-300
-             w-12 h-12 justify-center text-3xl items-center">
+             w-12 h-12 justify-center text-3xl items-center"
+             style={{marginRight: '-20px' }}>
                 <IoArrowBackOutline />
             </button>
         </div>
@@ -69,4 +72,4 @@ function profile() {
   )
 }
 
-export default profile
+export default Profile
