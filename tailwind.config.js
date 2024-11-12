@@ -14,7 +14,7 @@ module.exports = {
           25: '#f9fafb', // Custom color between white & gray-50
         },
         green: {
-          350: '#3ad49c', // Custom color between green-300 & green-400
+          350: '#32d398', // Custom color between green-300 & green-400
         },
       },
     },
