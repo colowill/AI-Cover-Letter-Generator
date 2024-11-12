@@ -6,7 +6,7 @@ function App() {
   return (
     // Loading Generator.js func
     <div>
-      <Profile />
+      <Generator />
     </div>
   );
 }

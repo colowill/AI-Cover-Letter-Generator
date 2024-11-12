@@ -13,7 +13,7 @@ function Generator() {
         <div className="flex flex-row justify-between mx-5 my-4 items-center">
             <button className="border-2 border-solid border-green-300 text-black text-xl font-bold
             rounded-md px-3 py-2 hover:bg-green-300">
-                Generate
+                Create
             </button>
             <h2 className="text-2xl font-bold justify-between mx-1 my-1" style={{marginRight: '60px' }}>
                 LinkedIn Cover Letter Generator
