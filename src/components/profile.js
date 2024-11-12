@@ -1,6 +1,7 @@
 import React from 'react'
 import { IoArrowBackOutline } from "react-icons/io5";
 
+
 // Profile section for user API keys and for entering their resume information
 function profile() {
   return (
@@ -9,10 +10,11 @@ function profile() {
             <h1></h1>
             <h2 // Header for info 
             className="text-2xl font-bold justify-between mx-1 my-1">
-                Info
+                Your Info
             </h2>
-            <button className="flex justify-end border-2 border-solid border-black rounded-full hover:bg-green-300 
-             w-12 h-12 justify-center text-3xl flex items-center">
+            <button // Backarrow Button
+            className="flex border-2 border-solid border-black rounded-full hover:bg-green-300
+             w-12 h-12 justify-center text-3xl items-center">
                 <IoArrowBackOutline />
             </button>
         </div>
@@ -29,7 +31,7 @@ function profile() {
                 name="AIKey"
                 type="text"
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg 
-                focus:ring-green-400 focus:border-green-400 block w-full p-2.5"
+                focus:ring-gray-400 focus:border-gray-400 focus:bg-white block w-full p-2.5"
                 placeholder="sk-BdY..."
                 required
                 />
@@ -45,7 +47,7 @@ function profile() {
                 name="resume"
                 id="resume"
                 className="border-2 border-solid border-gray-300 block w-full text-sm text-gray-900 p-2.5
-                focus:ring-green-400 focus:border-green-400 rounded-lg"
+                focus:ring-gray-400 focus:ring-0 focus:border-gray-400 rounded-lg bg-gray-50 focus:bg-white"
                 placeHolder="Paste here..."
                 // defaultValue={AIKey}
                 >
@@ -53,10 +55,12 @@ function profile() {
             </div>
             <div className="mb-6"
             >
-                <button
-                    type="submit"
-                    className=""
+                <button // Save button
+                    type="save"
+                    className="border-2 rounded-3xl px-8 py-2 border-solid bg-blue-500 text-white
+                     border-blue-500 block text-md hover:bg-blue-450 hover:border-blue-450 font-semibold tracking-wide"
                 >
+                    Save
                 </button>
             </div>
 
