@@ -12,15 +12,8 @@ function Generator( {setPage} ) {
      */
     <div className="flex flex-col">
         <div className="flex flex-row justify-between mx-5 my-4 items-center">
-
-            <button // Create button
-            className="border-2 border-solid border-green-400 bg-green-400 text-white 
-            text-lg font-semibold tracking-wide rounded-3xl px-5 py-2 hover:bg-green-350 hover:border-green-350">
-                Create
-            </button>
-
             <h2  // Header titled 'LinkedIn...'
-            className="text-2xl font-bold justify-between mx-1 my-1" style={{marginRight: '60px' }}>
+            className="text-2xl text-center flex-grow font-bold justify-between mx-1 my-1">
                 LinkedIn Cover Letter Generator
             </h2>
 
@@ -40,6 +33,15 @@ function Generator( {setPage} ) {
                 focus:ring-gray-400 focus:ring-0 focus:border-gray-400 rounded-lg  focus:bg-white w-full"
                 placeholder="Generated Resume"
             />
+
+        </div>
+        <div className="flex flex-row justify-between mx-5 my-4 items-center">
+
+            <button // Create button
+            className="border-2 border-solid border-green-400 bg-green-400 text-white 
+            text-lg font-semibold tracking-wide rounded-2xl px-5 py-2 hover:bg-green-350 hover:border-green-350">
+                Create
+            </button>
 
         </div>
     </div>

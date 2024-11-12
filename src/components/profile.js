@@ -69,8 +69,8 @@ function Profile( {setPage} ) {
             >
                 <button // Save button
                     type="save"
-                    className="border-2 rounded-3xl px-8 py-2 border-solid bg-blue-500 text-white
-                     border-blue-500 block text-md hover:bg-blue-450 hover:border-blue-450 font-semibold tracking-wide"
+                    className="border-2 rounded-2xl px-7 py-2 border-solid bg-blue-500 text-white
+                     border-blue-500 block text-lg hover:bg-blue-450 hover:border-blue-450 font-semibold tracking-wide"
                 >
                     Save
                 </button>
