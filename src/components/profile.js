@@ -10,11 +10,12 @@ function Profile( {setPage, resume, setResume, AIKey, setAIKey} ) {
     const submit = (e) => {
         e.preventDefault() // Stops page from reloading
         const formData = new FormData(e.target) // Allows for submissions to be saved and stored
-        const updatedResume = new formData(resume) // Stores any new submissions in updatedResume var
-        const updatedAIKey = new formData(AIKey) // Stores any new AI Key inputs
+        const updatedResume = formData.get("resume") // Stores any new submissions in updatedResume var
+        const updatedAIKey = formData.get("AIKey") // Stores any new AI Key inputs
         setAIKey(updatedAIKey)
         setResume(updatedResume)
-    }
+    };
+
   return (
     <div className="flex flex-col mx-5">
         <div className="flex flex-row justify-between mx-5 my-4 items-center" 
@@ -36,7 +37,7 @@ function Profile( {setPage, resume, setResume, AIKey, setAIKey} ) {
         </div>
 
         <form className="flex-col" 
-        onSubmit={(submit)} // Passes submit function to form
+        onSubmit={submit} // Passes submit function to form
         >
             <div className="mb-6 w-1/3">
 

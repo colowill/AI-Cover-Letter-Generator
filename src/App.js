@@ -12,13 +12,15 @@ function App() {
     case ROUTES.GENERATOR:
       return <Generator setPage={setPage}/> // setPage prop passed to component generator.js
     case ROUTES.PROFILE:
-      return <Profile 
+      return <Profile // setPage prop passed to component generator.js
+
       setPage={setPage} 
       resume={resume} 
       setResume={setResume} 
       AIKey={AIKey} 
       setAIKey={setAIKey}
-      />  // setPage prop passed to component generator.js
+
+      />  
     default:
       return <Generator setPage={setPage}/>
   }
