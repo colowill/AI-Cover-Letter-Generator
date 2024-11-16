@@ -80,8 +80,9 @@ function Profile( {setPage, resume, setResume, AIKey, setAIKey} ) {
                 </textarea>
 
             </div>
-            <div className="mb-6"
+            <div className="flex col mb-6 justify-between"
             >
+
                 <button // Save button
                     type="submit"
                     className="border-2 rounded-3xl px-7 py-2 border-solid bg-blue-500 text-white
@@ -89,6 +90,8 @@ function Profile( {setPage, resume, setResume, AIKey, setAIKey} ) {
                 >
                     Save
                 </button>
+
+                
                 
             </div>
 
