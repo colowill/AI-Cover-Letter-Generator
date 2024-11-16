@@ -27,6 +27,7 @@ function Profile( {setPage, resume, setResume, AIKey, setAIKey} ) {
             </h2>
 
             <button // Backarrow Button
+            type="button"
             onClick={() => { setPage(ROUTES.GENERATOR) }} // Swaps page with generator.js
             className="flex border-2 border-solid border-black rounded-full hover:bg-gray-50
              w-12 h-12 justify-center text-3xl items-center"
@@ -82,7 +83,7 @@ function Profile( {setPage, resume, setResume, AIKey, setAIKey} ) {
             <div className="mb-6"
             >
                 <button // Save button
-                    type="save"
+                    type="submit"
                     className="border-2 rounded-3xl px-7 py-2 border-solid bg-blue-500 text-white
                      border-blue-500 block text-lg hover:bg-blue-450 hover:border-blue-450 font-semibold tracking-wide"
                 >
