@@ -31,7 +31,7 @@ function Generator( {setPage} ) {
                 rows={12}
                 className="border-2 border-solid bg-gray-50 border-gray-300 block text-sm text-gray-900 p-3
                 focus:ring-gray-400 focus:ring-0 focus:border-gray-400 rounded-lg  focus:bg-white w-full"
-                placeholder="Generated Resume"
+                placeholder="Generated Cover Letter"
             />
 
         </div>
@@ -39,7 +39,7 @@ function Generator( {setPage} ) {
 
             <button // Create button
             className="border-2 border-solid border-green-400 bg-green-400 text-white 
-            text-lg font-semibold tracking-wide rounded-2xl px-5 py-2 hover:bg-green-350 hover:border-green-350">
+            text-lg font-semibold tracking-wide rounded-3xl px-5 py-2 hover:bg-green-350 hover:border-green-350">
                 Create
             </button>
 
