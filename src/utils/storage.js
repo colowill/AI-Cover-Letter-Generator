@@ -1,3 +1,4 @@
+/* global chrome */
 // Saves user resume and AIKey to chrome storage
 
 export const save = (key, data) => {
@@ -32,4 +33,4 @@ export const load = (key) => {
 const isExtension = () => {
     // Returns true if chrome storage is available, indicating a chrome extension
     return !!chrome?.storage;
-};
+}
