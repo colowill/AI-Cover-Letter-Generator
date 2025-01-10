@@ -37,10 +37,10 @@ function Generator( {setPage} ) {
         </div>
         <div className="flex flex-row justify-between mx-5 my-4 items-center">
 
-            <button // Create button
+            <button // Load button
             className="border-2 border-solid border-green-400 bg-green-400 text-white 
             text-lg font-semibold tracking-wide rounded-3xl px-5 py-2 hover:bg-green-350 hover:border-green-350">
-                Create
+                Load
             </button>
 
         </div>

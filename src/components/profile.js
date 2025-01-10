@@ -2,7 +2,6 @@ import React from 'react'
 import {ROUTES} from "../utils/pages";
 import { RiContractRightLine } from "react-icons/ri";
 import {save} from "../utils/storage";
-import {load} from "../utils/storage";
 
 //import { VscQuestion } from "react-icons/vsc";
 
@@ -11,15 +10,15 @@ import {load} from "../utils/storage";
 function Profile( {setPage, resume, setResume, AIKey, setAIKey} ) {
 
     const submit = (e) => {
-        e.preventDefault() // Stops page from reloading
-        const formData = new FormData(e.target) // Allows for submissions to be saved and stored
-        const updatedResume = formData.get("resume") // Stores any new submissions in updatedResume var
-        const updatedAIKey = formData.get("AIKey") // Stores any new AI Key inputs
-        save('resume', updatedResume)
-        save('AIKey', updatedAIKey)
+        e.preventDefault(); // Stops page from reloading
+        const formData = new FormData(e.target); // Allows for submissions to be saved and stored
+        const updatedResume = formData.get("resume"); // Stores any new submissions in updatedResume var
+        const updatedAIKey = formData.get("AIKey"); // Stores any new AI Key inputs
+        setAIKey(updatedAIKey);
+        setResume(updatedResume);
+        save('resume', updatedResume);
+        save('AIKey', updatedAIKey);
 
-        setAIKey(updatedAIKey)
-        setResume(updatedResume)
 
     };
 

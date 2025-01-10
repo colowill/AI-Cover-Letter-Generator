@@ -2,10 +2,10 @@
 // Saves user resume and AIKey to chrome storage
 
 export const save = (key, data) => {
-    if (isExtension) {
+    if (isExtension()) {
         try {
             // Saves data by a key to chrome local storage
-            return chrome.storage.local.set( {[key] : data});
+            return chrome.storage.local.set({ [key] : data });
         } catch (error) {
             console.error("Error saving data");
             console.error(error);
@@ -17,7 +17,7 @@ export const save = (key, data) => {
 };
 
 export const load = (key) => {
-    if (isExtension) {
+    if (isExtension()) {
         try {
             return chrome.storage.local.get(key).then((data) => data[key]);
         } catch (error) {
@@ -28,9 +28,9 @@ export const load = (key) => {
         return Promise.resolve(JSON.parse(localStorage.getItem(key)));
     }
 
-}
+};
 // Checks if current enviroment is a chrome extension
 const isExtension = () => {
     // Returns true if chrome storage is available, indicating a chrome extension
     return !!chrome?.storage;
-}
+};
